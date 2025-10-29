@@ -1,4 +1,47 @@
-theme: jekyll-theme-architect
+# Site Settings
 title: Alla Najib Barakat
-description: I hate blogs. I love github. Therefore, here we are.
-show_downloads: true
+description: Lecturer at University of Benghazi - Academic Website
+author: Alla Najib Barakat
+url: https://alla1101.github.io
+baseurl: ""
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: Bio
+    url: /bio/
+  - title: CV
+    url: /cv/
+  - title: Papers & Lectures
+    url: /papers/
+  - title: Posts
+    url: /posts/
+  - title: Documents
+    url: /documents/
+
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title/
+timezone: Africa/Tripoli
+
+# Plugins (for GitHub Pages compatibility)
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Collections
+collections:
+  documents:
+    output: true
+    permalink: /documents/:name/
